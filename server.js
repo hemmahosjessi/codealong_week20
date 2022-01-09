@@ -4,7 +4,6 @@ import cors from 'cors'
 import mongoose from 'mongoose'
 import crypto from 'crypto'
 import bcrypt from 'bcrypt-nodejs'
-import { resetWatchers } from 'nodemon/lib/monitor/watch'
 
 const mongoUrl = process.env.MONGO_URL || 'mongodb://localhost/auth'
 mongoose.connect(mongoUrl, { useNewUrlParser: true, useUnifiedTopology: true })
